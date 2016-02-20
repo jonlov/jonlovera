@@ -24,7 +24,7 @@
             <div class="row center">
                 <script src="https://apis.google.com/js/platform.js" async defer></script>
                 <g:hangout render="createhangout" data-render="createhangout"
-    data-initial_apps="[{ app_id : 'AIzaSyAsZMFmLgY0Kt9DfFu7-lR1-nejrh5EpNk', start_data : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }]"></g:hangout>
+    data-initial_apps="[{ app_id : 'portafolio-1227', 'app_type' : 'ROOM_APP' }]"></g:hangout>
             </div>
             <br>
             <br>
