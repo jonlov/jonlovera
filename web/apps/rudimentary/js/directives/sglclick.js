@@ -1,0 +1,1 @@
+angular.module("app").directive("sglclick",["$parse",function(a){return{restrict:"A",link:function(b,c,d){var e=a(d.sglclick),f=300,g=0,h=null;c.on("click",function(a){g++,1===g?h=setTimeout(function(){b.$apply(function(){e(b,{$event:a})}),g=0},f):(clearTimeout(h),g=0)})}}}]);

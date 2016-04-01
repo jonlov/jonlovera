@@ -1,0 +1,1 @@
+angular.module("app").directive("uiModule",["MODULE_CONFIG","uiLoad","$compile",function(a,b,c){return{restrict:"A",compile:function(d,e){var f=d.contents().clone();return function(d,e,g){e.contents().remove(),b.load(a[g.uiModule]).then(function(){c(f)(d,function(a,b){e.append(a)})})}}}}]);

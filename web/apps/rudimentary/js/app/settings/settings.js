@@ -1,0 +1,1 @@
+app.controller("SettingsCtrl",["$scope","$filter",function(a,b){a.filter="",a.folds=[{name:"Overview",filter:"overview"},{name:"Privacy",filter:"privacy"}]}]),app.controller("SettingsOverviewCtrl",["$scope","$filter",function(a,b){a.editItem=function(a){a&&a.selected&&(a.editing=!0)},a.doneEditing=function(a){a.editing=!1}}]);
