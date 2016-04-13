@@ -1,6 +1,6 @@
 html,
 body {
-    background: url(/images/wallpaper3.jpg);
+    background: url(../images/wallpaper3.jpg);
     background-attachment: fixed;
     background-color: #000;
     background-position: center center;
@@ -24,12 +24,12 @@ body {
 
 @font-face {
     font-family: Exo2-Light;
-    src: url(/fonts/Exo2-Light.otf);
+    src: url(../fonts/Exo2-Light.otf);
 }
 
 @font-face {
     font-family: Exo2-ExtraBold;
-    src: url(/fonts/Exo2-ExtraBold.otf);
+    src: url(../fonts/Exo2-ExtraBold.otf);
 }
 
 .font-white {
