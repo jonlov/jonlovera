@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.bootstrap', 'ngAnimate', 'ngTouch']);
+var app = angular.module('app', ['ui.bootstrap', 'ngTouch']);
 app.controller('homeCtrl', function($scope) {
     $scope.myInterval = 2500;
     $scope.noWrapSlides = false;
