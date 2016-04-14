@@ -15,6 +15,119 @@ body {
     vertical-align: baseline;
 }
 
+.fadeInOut {
+  animation: fadeIn 1s;
+}
+
+.fadeInOut.ng-leave {
+  animation: fadeOut 1s;
+}
+
+.zoomInOutLeft {
+  animation: zoomInLeft 1s;
+}
+
+.zoomInOutLeft.ng-leave {
+  animation: zoomOutLeft 1s;
+}
+
+.zoomInOutRight {
+  animation: zoomInRight 1s;
+}
+
+.zoomInOutRight.ng-leave {
+  animation: zoomOutRight 1s;
+}
+
+.bounceInOutUp {
+  animation: bounceInUp 1s;
+}
+
+.bounceInOutUp.ng-leave {
+  animation: bounceOutUp 1s;
+}
+
+@font-face {
+    font-family: Exo2-Light;
+    src: url(../fonts/Exo2-Light.otf);
+}
+
+@font-face {
+    font-family: Exo2-ExtraBold;
+    src: url(../fonts/Exo2-ExtraBold.otf);
+}
+
+.Exo2-ExtraBold {
+    font-family: Exo2-ExtraBold;
+}
+
+.font-white {
+    color: #fff;
+}
+
+.font-height-md {
+    line-height: 0.5;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-66 {
+    font-size: 66px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.wrap {
+    height: 250px;
+    left: 50%;
+    margin-left: -125px;
+    position: absolute;
+    top: 0;
+    width: 250px;
+}
+
+.social {
+    bottom: 0;
+    display: block;
+    height: 155px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.social a {
+    margin: 10px;
+}
+
 .carousel,
 .item,
 .active {
@@ -46,172 +159,4 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
-}
-
-@font-face {
-    font-family: Exo2-Light;
-    src: url(../fonts/Exo2-Light.otf);
-}
-
-@font-face {
-    font-family: Exo2-ExtraBold;
-    src: url(../fonts/Exo2-ExtraBold.otf);
-}
-
-.font-white {
-    color: #fff;
-}
-
-.font-height-md {
-    line-height: 0.5;
-}
-
-.font-36 {
-    font-size: 36px;
-}
-
-.font-66 {
-    font-size: 66px;
-}
-
-.Exo2-ExtraBold {
-    font-family: Exo2-ExtraBold;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.v-middle {
-    vertical-align: middle;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.table {
-    display: table;
-}
-
-.table-cell {
-    display: table-cell;
-}
-
-.height-100 {
-    height: 100%;
-}
-
-.p-l-32 {
-    padding-left: 32px;
-}
-
-.p-r-32 {
-    padding-right: 32px;
-}
-
-.absolute {
-    position: absolute;
-}
-
-
-/* .info-container {
-    bottom: 0; */
-
-
-/* left: 0; */
-
-
-/* position: absolute; */
-
-
-/* right: 0; */
-
-
-/* text-align: center; */
-
-
-/* top: 0; */
-
-
-/* }
-
-.info-container:before {
-    content: ' '; */
-
-
-/* display: inline-block; */
-
-
-/* height: 100%; */
-
-
-/* vertical-align: middle; */
-
-
-/* }
-
-.info-container img {
-    display: inline-block; */
-
-
-/* vertical-align: middle; */
-
-.wrap {
-    height: 250px;
-    left: 50%;
-    margin-left: -125px;
-    position: absolute;
-    top: 0;
-    width: 250px;
-}
-
-.social {
-    bottom: 0;
-    display: block;
-    height: 155px;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    z-index: 10;
-}
-
-.social a {
-    margin: 10px;
-}
-
-.l {
-    float: left;
-}
-
-.r {
-    float: right;
-}
-
-.l,
-.r {
-    width: 49%;
-}
-
-.l:before,
-.r:before {
-    content: "";
-    height: 250px;
-    width: 125px;
-}
-
-.l:before {
-    float: right;
-}
-
-.r:before {
-    float: left;
 }
