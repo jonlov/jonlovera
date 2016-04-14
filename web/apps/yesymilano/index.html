@@ -19,7 +19,7 @@
     <div style="height: 100%;
     width: 100%;
     position: fixed;">
-        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <uib-carousel active="active" no-pause="true" interval="myInterval" no-wrap="noWrapSlides">
             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                 <div class="fill" style="background-image:url('{{slide.image}}');">
                 <div class="carousel-caption">
