@@ -1,15 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Yesy Milano</title>
     <link rel="icon" href="favicon.ico?v1" type="image/x-icon">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
-<body>
-    <table style="height: 100%; width: 100%; position: absolute; z-index:10;" class="font-white">
+<body ng-controller="homeCtrl" class="text-white">
+    <div style="height: 100%;
+    width: 100%;
+    position: fixed;">
+        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="fill" style="background-image:url('{{slide.image}}');">
+                <div class="carousel-caption">
+                </div>
+                </div>
+            </uib-slide>
+        </uib-carousel>
+    </div>
+     <table style="height: 100%; width: 100%; position: absolute; z-index:10;" class="font-white">
         <tr>
             <td class="text-right">
                 <span class="Exo2-ExtraBold font-66">WEBSITE</span>
