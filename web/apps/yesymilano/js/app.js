@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ui.bootstrap', 'ngTouch']);
 app.controller('homeCtrl', function($scope) {
-    $scope.myInterval = 2500;
+    $scope.myInterval = 3000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [{
