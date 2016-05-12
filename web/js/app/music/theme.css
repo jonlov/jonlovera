@@ -32,24 +32,28 @@ videogular .iconButton {
 }
 
 videogular vg-time-display {
-    font-family: inherit !important;
-    font-size: inherit !important;
+    /*font-family: inherit !important;*/
+    /*font-size: inherit !important;*/
 }
 
 videogular vg-scrub-bar > div {
     position: relative;
+    /*height: 19px;*/
+    width: 300px;
 }
 
 videogular vg-title {
-    position: absolute;
-    width: 100%;
+    /*position: absolute;
+    width: 100%;*/
     line-height: 50px;
     /*padding: 0 10px;*/
 }
 
 videogular vg-button {
-    display: table-cell;
-    width: 50px;
+    display: inline-block;
+    margin-top: 4px;
+    /*width: 50px;*/
+    font-size: 20px;
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
@@ -103,7 +107,7 @@ videogular vg-fullscreen-button .exit:before {
 }
 
 .videogular-container.audio {
-    height: 50px;
+        height: 260px;
 }
 
 videogular vg-volume-bar .volumeClickArea,
@@ -124,7 +128,7 @@ videogular vg-volume-bar .volumeValue {
 }
 
 videogular vg-volume-bar:active .volumeValue,
-videogular vg-volume-bar:focus .volumeValue  {
+videogular vg-volume-bar:focus .volumeValue {
     border-top: 6px #000 groove;
 }
 

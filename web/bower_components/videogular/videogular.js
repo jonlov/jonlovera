@@ -1,5 +1,5 @@
 /**
- * @license videogular v1.4.0 http://videogular.com
+ * @license videogular v1.4.3 http://videogular.com
  * Two Fucking Developers http://twofuckingdevelopers.com
  * License: MIT
  */
@@ -78,8 +78,8 @@ angular.module("com.2fdevs.videogular")
  * - stop(): Stops media.
  * - playPause(): Toggles play and pause.
  * - seekTime(value, byPercent): Seeks to a specified time position. Param value must be an integer representing the target position in seconds or a percentage. By default seekTime seeks by seconds, if you want to seek by percentage just pass byPercent to true.
- * - setVolume(volume): Sets volume. Param volume must be an integer with a value between 0 and 1.
- * - setPlayback(playback): Sets playback. Param plaback must be an integer with a value between 0 and 2.
+ * - setVolume(volume): Sets volume. Param volume must be a float number with a value between 0 and 1.
+ * - setPlayback(playback): Sets playback. Param plaback must be a float number with a value between 0 and 2.
  * - setState(state): Sets a new state. Param state mus be an string with 'play', 'pause' or 'stop'. This method only changes the state of the player, but doesn't plays, pauses or stops the media file.
  * - toggleFullScreen(): Toggles between fullscreen and normal mode.
  * - updateTheme(css-url): Removes previous CSS theme and sets a new one.
@@ -173,7 +173,7 @@ angular.module("com.2fdevs.videogular")
             this.isBuffering = false;
             $scope.$apply($scope.vgCanPlay({$event: evt}));
 
-            if (!hasStartTimePlayed && this.startTime > 0) {
+            if (!hasStartTimePlayed && (this.startTime > 0 || this.startTime === 0)) {
                 this.seekTime(this.startTime);
                 hasStartTimePlayed = true;
             }
@@ -251,7 +251,7 @@ angular.module("com.2fdevs.videogular")
 
             this.updateBuffer(event);
 
-            if (event.target.duration != Infinity) {
+            if (event.target.duration != Infinity && event.target.duration != null && event.target.duration != undefined && event.target.duration != 1.7976931348623157e+308) {
                 // Fake the duration and current time for virtual clips
                 if (isVirtualClip) {
                     if (hasStartTimePlayed && (event.target.currentTime < this.startTime || event.target.currentTime - this.startTime > this.virtualClipDuration)) {
@@ -384,6 +384,7 @@ angular.module("com.2fdevs.videogular")
             var second;
             if (byPercent) {
                 if (isVirtualClip) {
+                    value = Math.max(0, Math.min(value, 100));
                     second = (value * this.virtualClipDuration / 100);
                     this.mediaElement[0].currentTime = this.startTime + second;
                 }
@@ -618,6 +619,7 @@ angular.module("com.2fdevs.videogular")
             this.isFullScreen = false;
             this.playback = 1;
             this.isConfig = ($scope.vgConfig != undefined);
+            this.mediaElement = [{play:function(){}, pause:function(){}, stop:function(){}, addEventListener:function(){}, removeEventListener: function(){}}];
 
             if (vgFullscreen.isAvailable) {
                 this.isFullScreen = vgFullscreen.isFullScreen();
@@ -1576,9 +1578,9 @@ angular.module("com.2fdevs.videogular")
          */
         this.supportsLocalStorage = function () {
             var testKey = 'videogular-test-key';
-            var storage = $window.sessionStorage;
 
             try {
+                var storage = $window.sessionStorage;
                 storage.setItem(testKey, '1');
                 storage.removeItem(testKey);
                 return 'localStorage' in $window && $window['localStorage'] !== null;
