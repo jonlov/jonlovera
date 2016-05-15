@@ -1,1 +1,0 @@
-app.controller("PlayCtrl",["$scope","$rootScope","$state",function(a,b,c){c.params.id&&b.player.load()}]);

@@ -1,1 +1,0 @@
-angular.module("app").directive("uiFocus",["$timeout","$parse",function(a,b){return{link:function(c,d,e){var f=b(e.uiFocus);c.$watch(f,function(b){b===!0&&a(function(){d[0].focus()})})}}}]);

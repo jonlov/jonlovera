@@ -1,1 +1,0 @@
-"use strict";angular.module("app").filter("fromNow",function(){return function(a){return moment(a).fromNow()}});

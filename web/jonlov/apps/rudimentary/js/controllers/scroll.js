@@ -1,1 +1,0 @@
-app.controller("ScrollController",["$scope","$timeout",function(a,b){a.datasource={get:function(a,c,d){return b(function(){var b,e,f,g;for(e=[],b=f=a,g=a+c-1;g>=a?g>=f:f>=g;b=g>=a?++f:--f)e.push("item #"+b);return d(e)},100)}}}]);

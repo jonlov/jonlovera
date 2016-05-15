@@ -1,1 +1,0 @@
-angular.module("app").directive("uiAppear",[function(){return{restrict:"A",link:function(a,b,c){b.addClass("invisible").appear().on("appear",function(){var a,d=c.animation||"fadeIn";b.hasClass("animated")||(a=c.delay||0,setTimeout(function(){b.removeClass("invisible").addClass(d+" animated")},a))})}}}]);
