@@ -1,0 +1,1 @@
+module.exports=function(grunt){grunt.initConfig({pkg:grunt.file.readJSON("package.json"),release:{options:{file:"bower.json",add:!1,commit:!1,tag:!1,push:!1,pushTags:!1,npm:!1}}}),grunt.loadNpmTasks("grunt-release"),grunt.registerTask("major",["release:major"]),grunt.registerTask("minor",["release:minor"]),grunt.registerTask("patch",["release:patch"])};
