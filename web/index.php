@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Jonathan Lovera - Renew Studio</title>
     <link rel="icon" href="/favicon.ico?RN">
+    <link rel="stylesheet" href="/css/production.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 </head>
 
