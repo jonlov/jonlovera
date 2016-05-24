@@ -1,11 +1,26 @@
-<!DOCTYPE html><html lang="en" data-ng-app="app"><head><meta charset="utf-8"><title>Yesy Milano</title><link rel="icon" href="/favicon.ico?YM"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="description" content="Cantautora venezolana Contacto : 00 58 424 518 17 60 Manager Douglas Teran milanoyesy@hotmail.com @YesyMilano"><meta name="keywords" content="yesy, milano, cantante, autora, music, pop, balada, rock"><meta itemprop="name" content="Yesy Milano"><meta itemprop="description" content="Cantautora venezolana Contacto : 00 58 424 518 17 60 Manager Douglas Teran milanoyesy@hotmail.com @YesyMilano"><meta itemprop="image" content="http://yesymilano.com/img/logoSM.png"><script type="application/ld+json">{
-      "@context" : "http://schema.org",
-      "@type": "Organization",
-      "url": "http://yesymilano.com",
-      "name" : "Yesy Milano",
-      "logo": "http://yesymilano.com/img/logoSM.png",
-      "sameAs" : [
-        "https://www.facebook.com/Yesy-Milano-105615746162876/?fref=ts",
-        "https://twitter.com/YESYMILANO"
-      ]
-    }</script><meta property="og:type" content="website"><meta property="og:url" content="http://yesymilano.com"><meta property="og:title" content="Yesy Milano"><meta property="og:description" content="Cantautora venezolana Contacto : 00 58 424 518 17 60 Manager Douglas Teran milanoyesy@hotmail.com @YesyMilano"><meta property="og:image" content="http://yesymilano.com/img/logoSM.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@YesyMilano"><meta name="twitter:title" content="Yesy Milano"><meta name="twitter:description" content="Cantautora venezolana Contacto : 00 58 424 518 17 60 Manager Douglas Teran milanoyesy@hotmail.com @YesyMilano"><meta name="twitter:image" content="http://yesymilano.com/img/logoSM.png"><link rel="stylesheet" href="/css/production.css"><link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="/bower_components/simple-line-icons/css/simple-line-icons.css"></head><body ng-controller="AppCtrl"><div class="app" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}"><div ng-include=" '/tpl/blocks/header.html' " class="fade-in app-header navbar-md {{app.settings.navbarCollapseColor}}" ng-class="{'hide': app.settings.hideHeader, 'bg-n': page == 'home'}"></div><div class="m-t-sm" ng-class="{'app-header-fixed-top': !app.settings.hideHeader}" style="position: absolute; z-index:1025; right: 0"><div class="pull-right m-r-xxl text-2x"><a href="https://www.youtube.com/channel/UChUdJl3eO87DXlmbsYBD1LA" target="_blank"><i class="fa fa-youtube"></i></a> <a href="https://twitter.com/YESYMILANO" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.facebook.com/Yesy-Milano-105615746162876/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://www.instagram.com/YESYMILANO/" target="_blank"><i class="fa fa-instagram"></i></a></div></div><div class="text-center loading fade-in" ng-hide="ready"><div style="padding-top: 100%"></div><div class="img"><img src="/img/logoSM.png" height="160px"></div><span class="pull-center h4" style="margin-top: 120px"><div class="progress progress-xxs m-b-none" style="width:250px"><div class="progress-bar progress-bar-primary slow" data-toggle="tooltip" data-original-title="0%" ng-class="{'w-90': !loadBar, 'quick w-full': loadBar}"></div></div><br>Cargando<span>.</span><span>.</span><span>.</span></span></div><div class="app-content" ng-class="{'m-n': app.settings.hideAside, 'h-full': app.settings.hideFooter }"><div class="app-content-body app-content-full fade-in smooth" ng-class="{'app-header-fixed-top': app.settings.hideHeader, 'h-full': app.settings.hideFooter }" ui-view></div></div></div><script src="/js/production.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jonathan Lovera - Renew Studio</title>
+    <link rel="icon" href="/favicon.ico?RN">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div class="text-center loading fade-in">
+          <div style="padding-top: 100%"></div>
+          <div class="img">
+              <div class="text-center">
+                <a href="http://instagram.com/renewsc/" target="_BLANK">
+                  <img class="blink absolute inline" height="60px" style="margin-left:16px" src="/img/renew-isotipo.png">
+                  <img height="60px" src="/img/renew-logo.png">
+                </a>
+              </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
